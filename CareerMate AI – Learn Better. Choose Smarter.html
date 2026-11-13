@@ -1,0 +1,261 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CareerMate AI – Learn Better. Choose Smarter.</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236d4aff'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white'>C</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>:root{--navy:#0f1b4d;--navy2:#1a2a6c;--purple:#6d4aff;--lav:#f4f2ff;--ink:#1c2340;--mut:#5d6585;--line:#e2dff5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.6 'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:#fff}
+[hidden]{display:none!important}a{color:inherit;text-decoration:none}h1,h2,h3{line-height:1.2;margin:0 0 .6em}h2{font-size:clamp(1.6rem,3vw,2.2rem);text-align:center}
+:focus-visible{outline:3px solid #b9a6ff;outline-offset:2px}
+.btn{display:inline-block;border:0;border-radius:10px;padding:.65em 1.2em;font:700 .95rem inherit;font-family:inherit;background:var(--purple);color:#fff;cursor:pointer}
+.btn:hover{background:#5b39e8}.btn:disabled{opacity:.6;cursor:wait}.btn.lg{padding:.85em 1.6em}.btn.ghost{background:#fff;color:var(--purple);border:1.5px solid var(--purple)}.btn.ghost-w{background:transparent;color:#fff;border:1.5px solid #ffffff88}
+.nav{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 5vw;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.nav nav{display:flex;gap:1.4rem;font-weight:500;color:var(--mut)}.nav nav a:hover{color:var(--purple)}.navbtn{display:flex;gap:.5rem}
+.logo{display:flex;align-items:center;gap:.5rem;font-weight:800;color:var(--navy)}.logo i{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--purple),var(--navy));color:#fff;font-style:normal}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding:5rem 5vw;background:linear-gradient(135deg,var(--navy),#3a1f9e);color:#fff}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800}.hero p{color:#d8d4f7;max-width:52ch}.row{display:flex;flex-wrap:wrap;gap:.7rem;align-items:end}
+.demo{background:#ffffff14;border:1px solid #ffffff2a;border-radius:20px;padding:1.2rem;display:grid;gap:.7rem}
+.bub{padding:.7rem 1rem;border-radius:14px;max-width:90%;font-size:.93rem}.bub.q{background:var(--purple);justify-self:end}.bub.a{background:#fff;color:var(--ink)}
+.sec{padding:4.5rem 5vw}.sec.alt{background:var(--lav)}.grid2,.grid3{display:grid;gap:1.2rem;max-width:1100px;margin:1.5rem auto}.grid2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.grid3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.4rem;box-shadow:0 4px 18px #1a2a6c10;margin:0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;max-width:1000px;margin:2rem auto 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;padding-left:3rem;position:relative;color:var(--mut)}.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700}.steps b{display:block;color:var(--ink)}
+.price .amt{font-size:2.4rem;font-weight:800;margin:0;color:var(--navy)}.price small{font-size:1rem;color:var(--mut)}.price ul{padding-left:1.1rem;color:var(--mut);min-height:7.5em}.hot{border:2px solid var(--purple)}
+blockquote cite{display:block;margin-top:.8rem;font-style:normal;font-size:.85rem;color:var(--mut)}
+footer{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem;padding:3rem 5vw;background:var(--navy);color:#c9c6ec}footer .logo{color:#fff}footer a:hover{color:#fff;text-decoration:underline}
+#v-auth{min-height:100vh;display:grid;place-content:center;gap:1.2rem;justify-items:center;background:var(--lav);padding:1.5rem}.logo.dark{font-size:1.2rem}
+.authcard{width:min(440px,92vw)}label{display:block;font-weight:700;font-size:.88rem;margin-bottom:.9rem}
+input,select,textarea{display:block;width:100%;margin-top:.3rem;padding:.65em .8em;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-weight:400;background:#fff}input:focus,select:focus,textarea:focus{border-color:var(--purple);outline:0}
+.err{color:#c62847;min-height:1.3em;margin:.2rem 0 .6rem;font-size:.9rem}.muted{color:var(--mut);font-size:.9rem}
+#v-app{display:grid;grid-template-columns:230px 1fr;min-height:100vh}
+aside{background:var(--navy);color:#cfcbf3;padding:1.2rem;display:flex;flex-direction:column;gap:.3rem;position:sticky;top:0;height:100vh}aside .logo{color:#fff;margin-bottom:1.2rem}
+aside a[data-t]{padding:.6rem .8rem;border-radius:10px}aside a.on{background:var(--purple);color:#fff}aside button{margin-top:auto}
+main{padding:2rem 4vw;background:var(--lav);min-width:0}main h1{font-size:1.7rem}main .grid2,main .grid3{max-width:none;margin:1rem 0}
+.stat b{font-size:2rem;color:var(--purple);display:block}.bar{height:8px;border-radius:6px;background:var(--line);margin:.2rem 0 .8rem}.bar i{display:block;height:100%;border-radius:6px;background:var(--purple)}
+.pill{display:inline-block;padding:.15em .7em;border-radius:99px;background:var(--lav);color:var(--purple);font-weight:700;font-size:.8rem}.pill.prem{background:var(--purple);color:#fff}
+.list a{display:block;padding:.5rem 0;border-bottom:1px solid var(--line)}.list a:hover{color:var(--purple)}
+#log{height:min(52vh,460px);overflow:auto;margin:1rem 0;padding:.5rem;background:var(--lav);border-radius:12px;display:flex;flex-direction:column;gap:.7rem}
+.m{padding:.7rem 1rem;border-radius:14px;max-width:88%;overflow-wrap:anywhere}.m.user{align-self:flex-end;background:var(--purple);color:#fff}.m.model{background:#fff;border:1px solid var(--line)}.m p{margin:.3em 0}.m ul,.m ol{margin:.3em 0;padding-left:1.2rem}.m code{background:var(--lav);padding:.1em .3em;border-radius:4px}.m pre{background:var(--navy);color:#fff;padding:.7rem;border-radius:8px;overflow:auto}.m pre code{background:none}
+#chatForm input{flex:1;min-width:180px;margin:0}.dots::after{content:'Thinking…';color:var(--mut)}
+.path{margin-top:1rem}.path h3{display:flex;justify-content:space-between;gap:1rem}.path h4{margin:1rem 0 .3rem}.path ul{margin:0;padding-left:1.2rem;color:var(--mut)}
+.lock{background:var(--lav);padding:.8rem 1rem;border-radius:10px;margin-top:1rem;color:var(--mut)}
+#toast{position:fixed;bottom:1.2rem;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;padding:.7rem 1.2rem;border-radius:10px;opacity:0;pointer-events:none;transition:opacity .25s}#toast.on{opacity:1}
+@media(max-width:860px){.hero,footer{grid-template-columns:1fr}.nav nav{display:none}#v-app{grid-template-columns:1fr}aside{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center}aside .logo{margin:0 auto 0 0}aside button{margin:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style></head><body>
+
+<div id="v-landing">
+<header class="nav"><a class="logo" href="#top"><i>C</i>CareerMate AI</a>
+<nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+<div class="navbtn"><a class="btn ghost" href="#/login" data-auth>Log in</a><a class="btn" href="#/signup" data-auth>Get started</a></div></header>
+<section class="hero" id="top"><div><h1>Learn Better. Choose Smarter. Build Your Future.</h1>
+<p>CareerMate AI gives college students a personal tutor and a career guide in one place: clear step-by-step explanations, study plans, and roadmaps built around your interests and skills.</p>
+<div class="row"><a class="btn lg" href="#/signup" data-auth>Get started free</a><a class="btn lg ghost-w" href="#features">Explore features</a></div></div>
+<div class="demo"><div class="bub q">How does binary search work?</div><div class="bub a"><b>Step 1.</b> Sort the list.<br><b>Step 2.</b> Check the middle item.<br><b>Step 3.</b> Discard the half that can't contain your target, then repeat.</div><div class="bub q">Which careers fit Python + maths?</div><div class="bub a">Data Analyst, ML Engineer, Quant Analyst. Want a roadmap for one?</div></div></section>
+
+<section id="features" class="sec"><h2>One platform for studying and planning</h2><div class="grid2">
+<article class="card"><h3>📘 AI Tutor</h3><p>Ask any academic question, pick your subject, and get simple step-by-step answers. Ask follow-ups until it clicks, or generate a study plan for your exam.</p></article>
+<article class="card"><h3>🧭 Career Guidance</h3><p>Enter your interests and skills. Get matching career paths, the skills to learn next, a learning roadmap, and real opportunities to pursue.</p></article></div></section>
+
+<section id="how" class="sec alt"><h2>How it works</h2><ol class="steps"><li><b>Create your profile</b>Tell us your education level, interests and skills.</li><li><b>Ask and explore</b>Chat with the tutor or run a career analysis.</li><li><b>Track progress</b>Your dashboard keeps conversations, plans and recommendations.</li></ol></section>
+
+<section id="pricing" class="sec"><h2>Simple pricing</h2><div class="grid2 price">
+<article class="card"><h3>Free</h3><p class="amt">₹0</p><ul><li>Basic AI tutoring (10 questions/day)</li><li>Limited career recommendations</li><li>Basic study plans</li></ul><a class="btn ghost" href="#/signup" data-auth>Start free</a></article>
+<article class="card hot"><h3>Premium</h3><p class="amt">₹199<small>/month</small></p><ul><li>Advanced AI tutoring with practice problems</li><li>Personalized career roadmaps</li><li>Detailed skill recommendations</li><li>Enhanced day-by-day study planning</li></ul><a class="btn" href="#/signup" data-auth>Choose Premium</a></article></div></section>
+
+<section id="reviews" class="sec alt"><h2>What students say</h2><div class="grid3">
+<blockquote class="card">“The step-by-step answers finally made data structures click for me.”<cite>Ananya, B.Tech CSE (sample)</cite></blockquote>
+<blockquote class="card">“I didn't know product analytics existed. The roadmap gave me a plan.”<cite>Rahul, BBA (sample)</cite></blockquote>
+<blockquote class="card">“The study planner kept my semester exam prep on track.”<cite>Sneha, B.Sc Physics (sample)</cite></blockquote></div></section>
+
+<footer id="contact"><div><a class="logo" href="#top"><i>C</i>CareerMate AI</a><p>Making education accessible, affordable and personalized.</p></div>
+<div><b>Contact</b><p>Questions, feedback or partnership ideas? Write to us:<br><span id="cmail"></span><br>VIT-AP University, Amaravati, Andhra Pradesh, India</p></div>
+<div><b>Follow us</b><p><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://x.com" target="_blank" rel="noopener">X</a> · <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></p></div></footer></div>
+
+<div id="v-auth" hidden><a class="logo dark" href="#top"><i>C</i>CareerMate AI</a>
+<form id="authForm" class="card authcard" novalidate><h2 id="authTitle"></h2>
+<div class="only-signup"><label>Full name<input id="aName" autocomplete="name"></label>
+<label>Education level<select id="aEdu"><option value="">Select…</option><option>High school</option><option>Diploma</option><option>Undergraduate</option><option>Postgraduate</option><option>Other</option></select></label>
+<label>Interests<input id="aInt" placeholder="e.g. AI, design, finance"></label><label>Skills<input id="aSk" placeholder="e.g. Python, Excel"></label></div>
+<label>Email<input id="aEmail" type="email" autocomplete="email"></label><label>Password (min 6 characters)<input id="aPass" type="password" autocomplete="current-password"></label>
+<p class="err" id="authErr" role="alert"></p><button class="btn" id="authBtn"></button><p id="authSwitch" class="muted"></p></form></div>
+
+<div id="v-app" hidden><aside><a class="logo" href="#/app"><i>C</i>CareerMate AI</a>
+<a href="#/app" data-t="dash">Dashboard</a><a href="#/tutor" data-t="tutor">AI Tutor</a><a href="#/career" data-t="career">Career Guidance</a><a href="#/profile" data-t="profile">Profile</a><button id="logout" class="btn ghost-w">Log out</button></aside>
+<main>
+<section data-p="dash"><h1 id="welcome"></h1><div class="grid3" id="stats"></div><div class="grid2">
+<div class="card"><h3>Subscription</h3><div id="sub"></div></div><div class="card"><h3>Study progress</h3><div id="prog"></div></div>
+<div class="card"><h3>Recent AI conversations</h3><div id="recent"></div></div><div class="card"><h3>Career recommendations</h3><div id="recs"></div></div></div></section>
+
+<section data-p="tutor" hidden><h1>AI Tutor</h1><div class="card tutor"><div class="row"><label>Subject<select id="subject"><option>Mathematics</option><option>Physics</option><option>Chemistry</option><option>Computer Science</option><option>Electronics</option><option>Economics</option><option>Management</option><option>English</option><option>General</option></select></label><button class="btn ghost" id="newChat">New chat</button></div>
+<div id="log" aria-live="polite"><p class="muted">Ask a question, or type a goal (e.g. “Pass DBMS in 2 weeks”) and press Study plan.</p></div>
+<form id="chatForm" class="row"><input id="msg" placeholder="Ask a question…" maxlength="2000"><button class="btn" id="send">Send</button><button class="btn ghost" type="button" id="planBtn">Study plan</button></form><p class="err" id="chatErr" role="alert"></p></div></section>
+
+<section data-p="career" hidden><h1>Career Guidance</h1><form id="careerForm" class="card"><label>Your interests<textarea id="cInt" rows="2" placeholder="e.g. artificial intelligence, startups, writing"></textarea></label><label>Your skills<textarea id="cSk" rows="2" placeholder="e.g. Python, public speaking"></textarea></label><p class="err" id="careerErr" role="alert"></p><button class="btn" id="careerBtn">Find my career paths</button></form><div id="careerOut"></div></section>
+
+<section data-p="profile" hidden><h1>Student profile</h1><form id="profForm" class="card authcard" novalidate><label>Full name<input id="pName"></label><label>Education level<select id="pEdu"><option value="">Select…</option><option>High school</option><option>Diploma</option><option>Undergraduate</option><option>Postgraduate</option><option>Other</option></select></label><label>Interests<input id="pInt"></label><label>Skills<input id="pSk"></label><p class="err" id="profErr" role="alert"></p><button class="btn">Save profile</button></form></section>
+</main></div>
+<div id="toast" role="status"></div>
+<script>(()=>{// ===== Browser-only demo backend: localStorage + Claude (sample capability) =====
+const LIMITS = { free: { tutor: 10, career: 3 }, premium: { tutor: 200, career: 50 } };
+const store = { get: k => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+let session = store.get('cm:session');
+(() => { const u = store.get('cm:users') || {}; const seed = [['demo@careermate.ai', 'demo1234', 'free', { name: 'Ananya Rao', education: 'Undergraduate', interests: 'AI, data science, startups', skills: 'Python, Excel' }, { questions: 6, plans: 1, careers: 1, subjects: { 'Computer Science': 4, Mathematics: 3 } }], ['premium@careermate.ai', 'premium1234', 'premium', { name: 'Rahul Verma', education: 'Postgraduate', interests: 'finance, analytics, product management', skills: 'SQL, Tableau, communication' }, { questions: 14, plans: 3, careers: 2, subjects: { Economics: 6, Management: 5, Mathematics: 6 } }]]; [].forEach(([e, p, plan, profile, stats]) => { if (u[e]) return; u[e] = p; store.set('cm:data:' + e, { plan, profile, stats, chats: {} }); }); store.set('cm:users', u); })();
+const auth = { get currentUser() { return session ? { getIdToken: async () => 'demo' } : null; } };
+let listener = () => {};
+const onAuthStateChanged = (_, cb) => { listener = cb; cb(); };
+const getAuth = () => auth, initializeApp = () => ({});
+const aerr = (code) => Object.assign(new Error(code), { code });
+const users = () => store.get('cm:users') || {};
+async function createUserWithEmailAndPassword(_, email, pass) { const u = users(); email = email.toLowerCase(); if (u[email]) throw aerr('auth/email-already-in-use'); u[email] = pass; store.set('cm:users', u); session = email; store.set('cm:session', email); }
+async function signInWithEmailAndPassword(_, email, pass) { email = email.toLowerCase(); if (users()[email] !== pass) throw aerr('auth/invalid-credential'); session = email; store.set('cm:session', email); }
+async function signOut() { session = null; store.set('cm:session', null); listener(); }
+const dk = () => 'cm:data:' + session, load = () => store.get(dk()) || { plan: 'free', stats: {}, chats: {} }, save = d => store.set(dk(), d);
+const clean = (s, n) => String(s || '').replace(/[<>]/g, '').trim().slice(0, n);
+async function ai() { const s = await (window.claude?.use('sample') ?? null); if (!s) throw new Error('AI is not available right now. Please try again later.'); return s; }
+function usage(d) { const t = new Date().toISOString().slice(0, 10); if (d.usage?.date !== t) d.usage = { date: t, tutor: 0, career: 0 }; return d.usage; }
+function quota(d, kind) { const u = usage(d), lim = LIMITS[d.plan][kind]; if (u[kind] >= lim) throw new Error(`Daily ${kind} limit reached on the ${d.plan} plan. Upgrade for more.`); }
+async function api(path, method = 'GET', body) {
+  const d = load(); usage(d);
+  if (path === '/me') { const chats = Object.entries(d.chats).sort((a, b) => b[1].updatedAt - a[1].updatedAt).slice(0, 5).map(([id, c]) => ({ id, title: c.title, subject: c.subject })); return { profile: d.profile || null, plan: d.plan, usage: d.usage, limits: LIMITS[d.plan], stats: d.stats, career: d.career || null, chats }; }
+  if (path === '/profile') { const p = { name: clean(body.name, 60), education: clean(body.education, 60), interests: clean(body.interests, 300), skills: clean(body.skills, 300) }; if (!p.name || !p.education) throw new Error('Name and education level are required.'); d.profile = p; save(d); return { profile: p }; }
+  if (path.startsWith('/chats/')) { const c = d.chats[path.slice(7)]; if (!c) throw new Error('Conversation not found.'); return c; }
+  if (path === '/plan') { d.plan = body.plan === 'premium' ? 'premium' : 'free'; save(d); return { plan: d.plan }; }
+  if (path === '/tutor') {
+    const message = clean(body.message, 2000), subject = clean(body.subject, 60) || 'General', plan = body.mode === 'plan'; if (!message) throw new Error('Please type a question.');
+    quota(d, 'tutor'); const prem = d.plan === 'premium';
+    const system = `You are CareerMate AI, a patient tutor for college students in India. Subject: ${subject}. Student level: ${d.profile?.education || 'college'}. ` + (plan ? `Create a ${prem ? 'detailed day-by-day study plan with goals, practice tasks, revision slots and a self-test' : 'short, basic weekly study plan'} for the student's goal.` : `Explain in simple language with numbered steps and one small example. ${prem ? 'Go deeper: add common mistakes and a practice problem with solution.' : 'Keep it concise.'}`) + ' Use Markdown.';
+    const msgs = [...(body.history || []).slice(-8).map(m => ({ role: m.role === 'model' ? 'assistant' : 'user', content: m.text })), { role: 'user', content: message }];
+    msgs[0].content = system + '\n\nStudent: ' + msgs[0].content;
+    let r; try { r = await (await ai())(msgs, { cache: false }); } catch (e) { throw new Error(e.message || 'AI request failed. Try again.'); }
+    const id = body.chatId || 'c' + Date.now(), c = d.chats[id] || { title: message.slice(0, 60), subject, messages: [] };
+    c.messages.push({ role: 'user', text: message }, { role: 'model', text: r.text }); c.updatedAt = Date.now(); d.chats[id] = c;
+    d.usage.tutor++; const s = d.stats; s.questions = (s.questions || 0) + (plan ? 0 : 1); s.plans = (s.plans || 0) + (plan ? 1 : 0); s.subjects = s.subjects || {}; s.subjects[subject] = (s.subjects[subject] || 0) + 1; save(d);
+    return { reply: r.text, chatId: id };
+  }
+  if (path === '/career') {
+    const interests = clean(body.interests, 400), skills = clean(body.skills, 400); if (!interests) throw new Error('Enter at least one interest.');
+    quota(d, 'career'); const prem = d.plan === 'premium';
+    const prompt = `You are a career counsellor for Indian college students. Return ONLY JSON: {"summary":string,"paths":[{"title":string,"why":string,"match":number,"skillsToLearn":[string],"roadmap":[{"phase":string,"steps":[string]}],"opportunities":[string]}]}. Give ${prem ? '4 paths, each with a 3-4 phase roadmap, 5-6 skills and 4 opportunities' : '2 paths, 3 skills and 2 opportunities each, and an empty roadmap array'}.\nInterests: ${interests}\nSkills: ${skills || 'none yet'}`;
+    let data; try { data = await (await ai()).json(prompt, { cache: false }); } catch (e) { throw new Error(e.message || 'AI request failed. Try again.'); }
+    if (!Array.isArray(data?.paths)) throw new Error('AI returned an unexpected format. Please try again.');
+    d.career = data; d.usage.career++; d.stats.careers = (d.stats.careers || 0) + 1; save(d); return data;
+  }
+}
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+let me = null, chatId = null, history = [], mode = 'login';
+
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function md(t) { // minimal safe Markdown
+  let h = esc(t).replace(/```[\w]*\n?([\s\S]*?)```/g, '<pre><code>$1</code></pre>').replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/^#{1,4} (.+)$/gm, '<p><b>$1</b></p>')
+    .replace(/^\s*[*-] (.+)$/gm, '<li>$1</li>').replace(/^\s*\d+\. (.+)$/gm, '<li>$1</li>');
+  return h.replace(/(<li>[\s\S]*?<\/li>)(?!\s*<li>)/g, '<ul>$1</ul>').replace(/\n{2,}/g, '<br>').replace(/\n/g, ' ');
+}
+function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('on'); setTimeout(() => t.classList.remove('on'), 2600); }
+const busy = (btn, on, label) => { btn.disabled = on; if (label) btn.textContent = on ? 'Please wait…' : label; };
+const friendly = e => ({ 'auth/invalid-credential': 'Email or password is incorrect.', 'auth/email-already-in-use': 'This email is already registered. Log in instead.', 'auth/weak-password': 'Password must be at least 6 characters.', 'auth/invalid-email': 'Enter a valid email address.', 'auth/too-many-requests': 'Too many attempts. Try again later.' }[e.code] || e.message);
+
+// ---------- routing ----------
+const views = { landing: '#v-landing', auth: '#v-auth', app: '#v-app' };
+function show(v) { Object.entries(views).forEach(([k, s]) => $(s).hidden = k !== v); }
+async function route() {
+  const h = location.hash || '#top', user = auth?.currentUser;
+  if (h === '#/login' || h === '#/signup') { if (user) return (location.hash = '#/app'); mode = h === '#/login' ? 'login' : 'signup'; setAuthMode(); show('auth'); return; }
+  if (['#/app', '#/tutor', '#/career', '#/profile'].includes(h)) {
+    if (!user) return (location.hash = '#/login');
+    show('app'); const t = { '#/app': 'dash', '#/tutor': 'tutor', '#/career': 'career', '#/profile': 'profile' }[h];
+    $$('[data-p]').forEach(s => s.hidden = s.dataset.p !== t); $$('aside a[data-t]').forEach(a => a.classList.toggle('on', a.dataset.t === t));
+    if (t === 'dash') loadMe().catch(e => toast(e.message)); return;
+  }
+  show('landing'); if (h.length > 1 && !h.startsWith('#/')) $(h)?.scrollIntoView();
+}
+addEventListener('hashchange', route);
+
+// ---------- auth ----------
+function setAuthMode() {
+  const s = mode === 'signup'; $$('.only-signup').forEach(e => e.hidden = !s);
+  $('#authTitle').textContent = s ? 'Create your account' : 'Welcome back'; $('#authBtn').textContent = s ? 'Sign up' : 'Log in';
+  $('#authSwitch').innerHTML = s ? 'Have an account? <a href="#/login"><u>Log in</u></a>' : 'New here? <a href="#/signup"><u>Create an account</u></a>'; $('#authErr').textContent = '';
+}
+$('#authForm').addEventListener('submit', async e => {
+  e.preventDefault(); const err = $('#authErr'), btn = $('#authBtn'), label = btn.textContent;
+  const email = $('#aEmail').value.trim(), pass = $('#aPass').value, name = $('#aName').value.trim(), edu = $('#aEdu').value;
+  if (!/^\S+@\S+\.\S+$/.test(email)) return err.textContent = 'Enter a valid email address.';
+  if (pass.length < 6) return err.textContent = 'Password must be at least 6 characters.';
+  if (mode === 'signup' && (!name || !edu)) return err.textContent = 'Name and education level are required.';
+  busy(btn, true, label); err.textContent = '';
+  try {
+    if (mode === 'signup') { await createUserWithEmailAndPassword(auth, email, pass); await api('/profile', 'PUT', { name, education: edu, interests: $('#aInt').value, skills: $('#aSk').value }); }
+    else await signInWithEmailAndPassword(auth, email, pass);
+    e.target.reset(); location.hash = '#/app';
+  } catch (x) { err.textContent = friendly(x); } finally { busy(btn, false, label); }
+});
+$('#logout').onclick = async () => { await signOut(auth); me = null; location.hash = '#top'; };
+
+// ---------- dashboard ----------
+async function loadMe() {
+  me = await api('/me'); const p = me.profile || {}, st = me.stats || {};
+  $('#welcome').textContent = `Welcome back, ${(p.name || 'student').split(' ')[0]} 👋`;
+  const stat = (n, l) => `<div class="card stat"><b>${n || 0}</b>${l}</div>`;
+  $('#stats').innerHTML = stat(st.questions, 'Questions asked') + stat(st.plans, 'Study plans made') + stat(st.careers, 'Career analyses');
+  const prem = me.plan === 'premium';
+  $('#sub').innerHTML = `<span class="pill ${prem ? 'prem' : ''}">${prem ? 'Premium · ₹199/month' : 'Free plan'}</span>
+    <p class="muted">Today: ${me.usage.tutor}/${me.limits.tutor} tutor messages · ${me.usage.career}/${me.limits.career} career analyses</p>
+    <button class="btn ${prem ? 'ghost' : ''}" id="planBtn2">${prem ? 'Switch to Free' : 'Upgrade to Premium (demo)'}</button><p class="muted">Demo mode: no real payment is taken.</p>`;
+  $('#planBtn2').onclick = async () => { await api('/plan', 'POST', { plan: prem ? 'free' : 'premium' }); toast('Plan updated'); loadMe(); };
+  const subs = Object.entries(st.subjects || {}), max = Math.max(1, ...subs.map(s => s[1]));
+  $('#prog').innerHTML = subs.length ? subs.map(([s, n]) => `<div>${esc(s)} <span class="muted">· ${n} sessions</span><div class="bar"><i style="width:${n / max * 100}%"></i></div></div>`).join('') : '<p class="muted">No activity yet. Ask the AI Tutor your first question.</p>';
+  $('#recent').innerHTML = me.chats.length ? '<div class="list">' + me.chats.map(c => `<a href="#/tutor" data-chat="${esc(c.id)}">${esc(c.title)} <span class="pill">${esc(c.subject)}</span></a>`).join('') + '</div>' : '<p class="muted">No conversations yet.</p>';
+  $$('[data-chat]').forEach(a => a.addEventListener('click', () => openChat(a.dataset.chat)));
+  $('#recs').innerHTML = me.career ? me.career.paths.slice(0, 3).map(c => `<p><b>${esc(c.title)}</b> <span class="pill">${esc(c.match)}% match</span></p>`).join('') + '<a class="btn ghost" href="#/career">Run a new analysis</a>' : '<p class="muted">Run a career analysis to see recommendations.</p><a class="btn" href="#/career">Find careers</a>';
+  if (!$('#cInt').value) { $('#cInt').value = p.interests || ''; $('#cSk').value = p.skills || ''; }
+  $('#pName').value = p.name || ''; $('#pEdu').value = p.education || ''; $('#pInt').value = p.interests || ''; $('#pSk').value = p.skills || '';
+}
+
+// ---------- tutor ----------
+const bubble = (role, text) => { const d = document.createElement('div'); d.className = 'm ' + role; d.innerHTML = role === 'user' ? esc(text) : md(text); $('#log').append(d); $('#log').scrollTop = 1e9; return d; };
+function resetChat() { chatId = null; history = []; $('#log').innerHTML = '<p class="muted">New conversation. Ask anything.</p>'; }
+async function openChat(id) {
+  try { const c = await api('/chats/' + id); chatId = id; history = c.messages; $('#subject').value = c.subject; $('#log').innerHTML = ''; c.messages.forEach(m => bubble(m.role, m.text)); }
+  catch (e) { toast(e.message); }
+}
+async function ask(kind) {
+  const input = $('#msg'), text = input.value.trim(), err = $('#chatErr'); err.textContent = '';
+  if (!text) return err.textContent = 'Type a question or goal first.';
+  if ($('#log .muted')) $('#log').innerHTML = '';
+  bubble('user', text); input.value = ''; const wait = bubble('model', ''); wait.classList.add('dots'); $$('#chatForm button').forEach(b => b.disabled = true);
+  try {
+    const r = await api('/tutor', 'POST', { message: text, subject: $('#subject').value, mode: kind, chatId, history });
+    chatId = r.chatId; history.push({ role: 'user', text }, { role: 'model', text: r.reply }); wait.classList.remove('dots'); wait.innerHTML = md(r.reply);
+  } catch (e) { wait.remove(); err.textContent = e.message; } finally { $$('#chatForm button').forEach(b => b.disabled = false); $('#log').scrollTop = 1e9; }
+}
+$('#chatForm').addEventListener('submit', e => { e.preventDefault(); ask('ask'); });
+$('#planBtn').onclick = () => ask('plan'); $('#newChat').onclick = resetChat;
+
+// ---------- career ----------
+$('#careerForm').addEventListener('submit', async e => {
+  e.preventDefault(); const err = $('#careerErr'), btn = $('#careerBtn'), out = $('#careerOut'); err.textContent = '';
+  const interests = $('#cInt').value.trim(); if (!interests) return err.textContent = 'Enter at least one interest.';
+  busy(btn, true, 'Find my career paths'); out.innerHTML = '<p class="muted">Analysing your profile…</p>';
+  try {
+    const r = await api('/career', 'POST', { interests, skills: $('#cSk').value });
+    const list = a => '<ul>' + (a || []).map(x => `<li>${esc(x)}</li>`).join('') + '</ul>';
+    out.innerHTML = `<div class="card path"><p>${esc(r.summary)}</p></div>` + r.paths.map(p => `<article class="card path"><h3>${esc(p.title)} <span class="pill">${esc(p.match)}% match</span></h3><p>${esc(p.why)}</p>
+      <h4>Skills to learn</h4>${list(p.skillsToLearn)}<h4>Opportunities</h4>${list(p.opportunities)}
+      ${p.roadmap?.length ? '<h4>Learning roadmap</h4>' + p.roadmap.map(s => `<p><b>${esc(s.phase)}</b></p>${list(s.steps)}`).join('') : '<div class="lock">Detailed roadmaps are part of Premium. <a href="#/app"><u>Upgrade on your dashboard</u></a></div>'}</article>`).join('');
+  } catch (x) { out.innerHTML = ''; err.textContent = x.message; } finally { busy(btn, false, 'Find my career paths'); }
+});
+
+// ---------- profile ----------
+$('#profForm').addEventListener('submit', async e => {
+  e.preventDefault(); const err = $('#profErr'); err.textContent = '';
+  if (!$('#pName').value.trim() || !$('#pEdu').value) return err.textContent = 'Name and education level are required.';
+  try { await api('/profile', 'PUT', { name: $('#pName').value, education: $('#pEdu').value, interests: $('#pInt').value, skills: $('#pSk').value }); toast('Profile saved'); loadMe(); }
+  catch (x) { err.textContent = x.message; }
+});
+
+// ---------- boot ----------
+const m = ['gayathri.25bca7821', 'vitapstudent.ac.in'].join('@'), c = document.getElementById('cmail'); c.textContent = m;
+onAuthStateChanged(auth, () => route());
+
+})();</script></body></html>
