@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CareerMate AI – Learn Better. Choose Smarter.</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236d4aff'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white'>C</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+
+<div id="v-landing">
+<header class="nav"><a class="logo" href="#top"><i>C</i>CareerMate AI</a>
+<nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a></nav>
+<div class="navbtn"><a class="btn ghost" href="#/login" data-auth>Log in</a><a class="btn" href="#/signup" data-auth>Get started</a></div></header>
+<section class="hero" id="top"><div><h1>Learn Better. Choose Smarter. Build Your Future.</h1>
+<p>CareerMate AI gives college students a personal tutor and a career guide in one place: clear step-by-step explanations, study plans, and roadmaps built around your interests and skills.</p>
+<div class="row"><a class="btn lg" href="#/signup" data-auth>Get started free</a><a class="btn lg ghost-w" href="#features">Explore features</a></div></div>
+<div class="demo"><div class="bub q">How does binary search work?</div><div class="bub a"><b>Step 1.</b> Sort the list.<br><b>Step 2.</b> Check the middle item.<br><b>Step 3.</b> Discard the half that can't contain your target, then repeat.</div><div class="bub q">Which careers fit Python + maths?</div><div class="bub a">Data Analyst, ML Engineer, Quant Analyst. Want a roadmap for one?</div></div></section>
+
+<section id="features" class="sec"><h2>One platform for studying and planning</h2><div class="grid2">
+<article class="card"><h3>📘 AI Tutor</h3><p>Ask any academic question, pick your subject, and get simple step-by-step answers. Ask follow-ups until it clicks, or generate a study plan for your exam.</p></article>
+<article class="card"><h3>🧭 Career Guidance</h3><p>Enter your interests and skills. Get matching career paths, the skills to learn next, a learning roadmap, and real opportunities to pursue.</p></article></div></section>
+
+<section id="how" class="sec alt"><h2>How it works</h2><ol class="steps"><li><b>Create your profile</b>Tell us your education level, interests and skills.</li><li><b>Ask and explore</b>Chat with the tutor or run a career analysis.</li><li><b>Track progress</b>Your dashboard keeps conversations, plans and recommendations.</li></ol></section>
+
+<section id="pricing" class="sec"><h2>Simple pricing</h2><div class="grid2 price">
+<article class="card"><h3>Free</h3><p class="amt">₹0</p><ul><li>Basic AI tutoring (10 questions/day)</li><li>Limited career recommendations</li><li>Basic study plans</li></ul><a class="btn ghost" href="#/signup" data-auth>Start free</a></article>
+<article class="card hot"><h3>Premium</h3><p class="amt">₹199<small>/month</small></p><ul><li>Advanced AI tutoring with practice problems</li><li>Personalized career roadmaps</li><li>Detailed skill recommendations</li><li>Enhanced day-by-day study planning</li></ul><a class="btn" href="#/signup" data-auth>Choose Premium</a></article></div></section>
+
+<section id="reviews" class="sec alt"><h2>What students say</h2><div class="grid3">
+<blockquote class="card">“The step-by-step answers finally made data structures click for me.”<cite>Ananya, B.Tech CSE (sample)</cite></blockquote>
+<blockquote class="card">“I didn't know product analytics existed. The roadmap gave me a plan.”<cite>Rahul, BBA (sample)</cite></blockquote>
+<blockquote class="card">“The study planner kept my semester exam prep on track.”<cite>Sneha, B.Sc Physics (sample)</cite></blockquote></div></section>
+
+<footer><div><a class="logo" href="#top"><i>C</i>CareerMate AI</a><p>Making education accessible, affordable and personalized.</p></div>
+<div><b>Contact</b><p><a href="mailto:hello@careermate.ai">hello@careermate.ai</a><br>Amaravati, Andhra Pradesh, India</p></div>
+<div><b>Follow us</b><p><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://x.com" target="_blank" rel="noopener">X</a> · <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></p></div></footer></div>
+
+<div id="v-auth" hidden><a class="logo dark" href="#top"><i>C</i>CareerMate AI</a>
+<form id="authForm" class="card authcard" novalidate><h2 id="authTitle"></h2>
+<div class="only-signup"><label>Full name<input id="aName" autocomplete="name"></label>
+<label>Education level<select id="aEdu"><option value="">Select…</option><option>High school</option><option>Diploma</option><option>Undergraduate</option><option>Postgraduate</option><option>Other</option></select></label>
+<label>Interests<input id="aInt" placeholder="e.g. AI, design, finance"></label><label>Skills<input id="aSk" placeholder="e.g. Python, Excel"></label></div>
+<label>Email<input id="aEmail" type="email" autocomplete="email"></label><label>Password (min 6 characters)<input id="aPass" type="password" autocomplete="current-password"></label>
+<p class="err" id="authErr" role="alert"></p><button class="btn" id="authBtn"></button><p id="authSwitch" class="muted"></p></form></div>
+
+<div id="v-app" hidden><aside><a class="logo" href="#/app"><i>C</i>CareerMate AI</a>
+<a href="#/app" data-t="dash">Dashboard</a><a href="#/tutor" data-t="tutor">AI Tutor</a><a href="#/career" data-t="career">Career Guidance</a><a href="#/profile" data-t="profile">Profile</a><button id="logout" class="btn ghost-w">Log out</button></aside>
+<main>
+<section data-p="dash"><h1 id="welcome"></h1><div class="grid3" id="stats"></div><div class="grid2">
+<div class="card"><h3>Subscription</h3><div id="sub"></div></div><div class="card"><h3>Study progress</h3><div id="prog"></div></div>
+<div class="card"><h3>Recent AI conversations</h3><div id="recent"></div></div><div class="card"><h3>Career recommendations</h3><div id="recs"></div></div></div></section>
+
+<section data-p="tutor" hidden><h1>AI Tutor</h1><div class="card tutor"><div class="row"><label>Subject<select id="subject"><option>Mathematics</option><option>Physics</option><option>Chemistry</option><option>Computer Science</option><option>Electronics</option><option>Economics</option><option>Management</option><option>English</option><option>General</option></select></label><button class="btn ghost" id="newChat">New chat</button></div>
+<div id="log" aria-live="polite"><p class="muted">Ask a question, or type a goal (e.g. “Pass DBMS in 2 weeks”) and press Study plan.</p></div>
+<form id="chatForm" class="row"><input id="msg" placeholder="Ask a question…" maxlength="2000"><button class="btn" id="send">Send</button><button class="btn ghost" type="button" id="planBtn">Study plan</button></form><p class="err" id="chatErr" role="alert"></p></div></section>
+
+<section data-p="career" hidden><h1>Career Guidance</h1><form id="careerForm" class="card"><label>Your interests<textarea id="cInt" rows="2" placeholder="e.g. artificial intelligence, startups, writing"></textarea></label><label>Your skills<textarea id="cSk" rows="2" placeholder="e.g. Python, public speaking"></textarea></label><p class="err" id="careerErr" role="alert"></p><button class="btn" id="careerBtn">Find my career paths</button></form><div id="careerOut"></div></section>
+
+<section data-p="profile" hidden><h1>Student profile</h1><form id="profForm" class="card authcard" novalidate><label>Full name<input id="pName"></label><label>Education level<select id="pEdu"><option value="">Select…</option><option>High school</option><option>Diploma</option><option>Undergraduate</option><option>Postgraduate</option><option>Other</option></select></label><label>Interests<input id="pInt"></label><label>Skills<input id="pSk"></label><p class="err" id="profErr" role="alert"></p><button class="btn">Save profile</button></form></section>
+</main></div>
+<div id="toast" role="status"></div>
+<script type="module" src="app.js"></script></body></html>
